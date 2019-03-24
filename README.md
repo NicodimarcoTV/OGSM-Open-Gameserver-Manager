@@ -6,7 +6,7 @@ LinuxGSM: https://github.com/GameServerManagers/LinuxGSM
 Installing dependencies
 
 ```
-sudo apt-get install git php7.2 tmux apache2 nano
+sudo apt-get install git php7.2 tmux curl python jq apache2 nano
 ```
 Downloading The repository
 
@@ -19,7 +19,9 @@ sudo mkdir Servers
 Adding permissions
 
 ```
-sudo chown www-data:www-data /var/www/html
+sudo chown www-data:www-data /var/www/html/*
+sudo chown www-data:www-data /var/www/html/OGSM/*
+
 ```
 Type ``` sudo visudo ``` and insert this line after ``` %sudo   ALL=(ALL:ALL) ALL ```
 
