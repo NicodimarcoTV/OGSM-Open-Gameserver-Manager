@@ -69,7 +69,11 @@ shell_exec("sh $Home/sh/action.sh $Aktion,$Server,$Name");
 
 if ($Aktion == "deinstall") {
   $Variable = "../index.php";
-} else {
+} elseif ($Aktion == "reboot") {
+  $Variable = "../index.php";
+} elseif ($Aktion == "shutdown") {
+  $Variable = "../index.php";
+} elseif ($Aktion == "install") {
   $Variable = "gui.php?server=$Server";
 }
 

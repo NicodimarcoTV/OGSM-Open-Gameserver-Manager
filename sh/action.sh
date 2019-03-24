@@ -1,7 +1,7 @@
 #!/bin/bash
 #Server Config
 
-. /var/www/html/sh/config.txt
+. /var/www/html/OGSM/sh/config.txt
 #echo "Benutzer=$user" >&2
 #echo "Home Verzeichnis=$home" >&2
 
@@ -9,6 +9,9 @@ HOME="$home"
 USER="$user"
 commands="$@"
 #Functions
+
+
+#commands="install,ts3server,Teamspeak 3"
 
 ACTION=`echo $commands | awk -F, '{print $1}'`
 SERVER=`echo $commands | awk -F, '{print $2}'`
@@ -82,11 +85,11 @@ deinstallieren_script() {
 }
 
 reboot_script() {
-   sudo reboot -it 10
+   sleep 10 ; sudo reboot &
 }
 
 shutdown_script() {
-   sudo shutdown -it 10
+   sleep 10 ; sudo shutdown &
 }
 
 
