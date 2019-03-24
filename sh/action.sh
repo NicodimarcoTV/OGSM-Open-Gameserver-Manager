@@ -1,7 +1,7 @@
 #!/bin/bash
 #Server Config
 
-. /var/www/html/sh/config.txt
+. /var/www/html/OGSM/sh/config.txt
 #echo "Benutzer=$user" >&2
 #echo "Home Verzeichnis=$home" >&2
 
