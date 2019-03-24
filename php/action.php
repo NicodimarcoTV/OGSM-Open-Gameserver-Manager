@@ -9,7 +9,7 @@
 <link type="text/css" href="../css/horizontalemenue.css" rel="stylesheet" media="screen" >
 <Style>
 body {
-    background: url("../bilder/Hintergrund.jpg");
+    background: url("../Hintergrund.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     padding-top: 40px;
@@ -26,18 +26,11 @@ body {
 <br></br>
 <ul>
   <li><a class="active" href="../index.php">Home</a></li>
-   <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Server</a>
-    <div class="dropdown-content">
-      <a href="http://192.168.178.67/linux-dash">Resourcen Monitor</a>
-      <a href="http://nicodimarcotv.ddnss.de">Hardware</a>
   <li><a class="horizontalemenue" href="install.php">Installations Menü</a></li>
 
 <?php include("servers.txt"); ?>
 
 </ul>
-
-<br></br>
 
 </html>
 
@@ -74,6 +67,12 @@ $Server = $_GET['Server'];
 
 shell_exec("sh $Home/sh/action.sh $Aktion,$Server,$Name");
 
+if ($Aktion == "deinstall") {
+  $Variable = "../index.php";
+} else {
+  $Variable = "gui.php?server=$Server";
+}
+
 ?>
 
-<meta http-equiv="refresh" content="0; URL=../index.php">
+<meta http-equiv="refresh" content='0; URL="<?php echo htmlspecialchars($Variable);?>"'>

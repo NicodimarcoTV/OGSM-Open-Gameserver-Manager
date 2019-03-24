@@ -1,7 +1,7 @@
 #!/bin/bash
 #Server Config
 
-. /var/www/html/OGSM/sh/config.txt
+. /var/www/html/sh/config.txt
 #echo "Benutzer=$user" >&2
 #echo "Home Verzeichnis=$home" >&2
 
@@ -9,8 +9,6 @@ HOME="$home"
 USER="$user"
 commands="$@"
 #Functions
-
-#commands="deinstall,ts3server,Teamspeak 3"
 
 ACTION=`echo $commands | awk -F, '{print $1}'`
 SERVER=`echo $commands | awk -F, '{print $2}'`
@@ -25,7 +23,7 @@ install_script() {
  else
    mkdir $HOME/$SERVER
    cd $HOME/$SERVER
-#   echo "$SERVER" >&2
+   echo "$SERVER" >&2
    wget -O linuxgsm.sh "https://linuxgsm.sh"
    chmod +x linuxgsm.sh
    chown $USER:$USER $HOME/$SERVER
@@ -83,6 +81,16 @@ deinstallieren_script() {
    fi
 }
 
+reboot_script() {
+   sudo reboot -it 10
+}
+
+shutdown_script() {
+   sudo shutdown -it 10
+}
+
+
+
 #Select Action
 
 if [ "$ACTION" = "install" ]
@@ -109,6 +117,13 @@ then
 elif [ "$ACTION" = "deinstall" ]
 then
     deinstallieren_script
+elif [ "$ACTION" = "reboot" ]
+then
+    reboot_script
+elif [ "$ACTION" = "shutdown" ]
+then
+    shutdown_script
+
 else [ "$ACTION" = "" ]
     echo "Nicht Gefunden"
 fi

@@ -1,5 +1,13 @@
 <?php
 
+$config = include('config.php');
+
+$Home = $config["Home"];
+echo "$Home";
+
+$User = $config["User"];
+echo "$User";
+
 $server = $_GET['server'];
 
     $lines = file('../serverlist.txt');
@@ -34,7 +42,7 @@ $server = $_GET['server'];
 <link type="text/css" href="../css/horizontalemenue.css" rel="stylesheet" media="screen" >
 <Style>
 body {
-    background: url("../bilder/Hintergrund.jpg");
+    background: url("../Hintergrund.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     padding-top: 40px;
@@ -51,11 +59,6 @@ body {
 <br></br>
 <ul>
   <li><a class="active" href="../index.php">Home</a></li>
-   <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Server</a>
-    <div class="dropdown-content">
-      <a href="http://192.168.178.67/linux-dash">Resourcen Monitor</a>
-      <a href="http://nicodimarcotv.ddnss.de">Hardware</a>
   <li><a class="horizontalemenue" href="install.php">Installations Menü</a></li>
 
 <?php include("servers.txt"); ?>
@@ -72,6 +75,14 @@ body {
 <a class="buttonorange" href="action.php?Aktion=restart&Server=<?php echo htmlspecialchars($server); ?>" methode="get"><?php echo htmlspecialchars($Server); ?> Neustarten</a>
 
 <a class="buttonrot" href="action.php?Aktion=stop&Server=<?php echo htmlspecialchars($server); ?>" methode="get"><?php echo htmlspecialchars($Server); ?> Stoppen</a>
+
+<h2 style='color:<?php echo htmlspecialchars($Color); ?>;'><?php echo htmlspecialchars($Status); ?></h2>
+
+<br></br>
+
+
+<iframe height="600" width="1300" src="../Codiad/index.php">
+</iframe>
 
 <br></br>
 

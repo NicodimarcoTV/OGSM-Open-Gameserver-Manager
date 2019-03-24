@@ -3,13 +3,16 @@
 <html>
 <head>
 
+<meta http-equiv="expires" content="0">
+<meta http-equiv="cache-control" content="no-cache">
+
 <meta charset="utf-8">
 
 <link type="text/css" href="css/button.css" rel="stylesheet" media="screen" >
 <link type="text/css" href="css/horizontalemenue.css" rel="stylesheet" media="screen" >
 <Style>
 body {
-    background: url("bilder/Hintergrund.jpg");
+    background: url("Hintergrund.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     padding-top: 40px;
@@ -26,9 +29,6 @@ body {
 <br></br>
 <ul>
   <li><a class="active" href="index.php">Home</a></li>
-   <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Server</a>
-    <div class="dropdown-content">
   <li><a class="horizontalemenue" href="php/install.php">Installations Menü</a></li>
 
 <?php include("servers.txt"); ?>
@@ -38,19 +38,41 @@ body {
 <h2 style="color:white;">Host System Optionen</h2>
 
 
-	<br><a class="buttongruen" href="skripte/wake.php" >
-	Server Starten
-	</a>
-
-	<a class="buttonorange" href="skripte/restart.php">
+	<a class="buttongruen" onclick="reboot()">
 	Server Neustarten
 	</a>
 
-	<a class="buttonrot" href="skripte/poweroff.php">
-	Server Stoppen
+	<a class="buttonrot" onclick="shutdown()">
+	Server Herunterfahren
 	</a>
 
 	<br></br>
+
+
+<script>
+function reboot() {
+  var txt;
+  var r = confirm("Wollen sie den Server wirklich Neustarten ?");
+  if (r == true) {
+   window.location.href="php/action.php?Aktion=reboot";
+  } else {
+   window.location.href="index.php";
+  }
+}
+</script>
+
+<script>
+function shutdown() {
+  var txt;
+  var r = confirm("Wollen sie den Server wirklich Herunterfahren ?");
+  if (r == true) {
+   window.location.href="php/action.php?Aktion=shutdown";
+  } else {
+   window.location.href="index.php";
+  }
+}
+</script>
+
 
 </body>
 </html>
