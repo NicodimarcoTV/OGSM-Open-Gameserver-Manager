@@ -76,10 +76,6 @@ body {
 
 <br></br>
 
-
-<iframe height="400" width="800" src="">
-</iframe>
-
 <br></br>
 
 <a class="buttonrot" href="action.php?Aktion=deinstall&Server=<?php echo htmlspecialchars($server); ?>" methode="get"><?php echo htmlspecialchars($Server); ?> Deinstallieren </a>
