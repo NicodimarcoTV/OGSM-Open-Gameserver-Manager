@@ -29,8 +29,6 @@ body {
    <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Server</a>
     <div class="dropdown-content">
-      <a href="http://192.168.178.67/linux-dash">Resourcen Monitor</a>
-      <a href="http://nicodimarcotv.ddnss.de">Hardware</a>
   <li><a class="horizontalemenue" href="php/install.php">Installations Menü</a></li>
 
 <?php include("servers.txt"); ?>
@@ -51,14 +49,6 @@ body {
 	<a class="buttonrot" href="skripte/poweroff.php">
 	Server Stoppen
 	</a>
-
-	<a class="buttongelb" href="http://192.168.178.67/linux-dash">
-        Resourcen Monitor
-        </a>
-
- 	<a class="buttonblau" href="http://nicodimarcotv.ddnss.de">
-        Zur Hardware
-        </a></br>
 
 	<br></br>
 
