@@ -1,0 +1,5 @@
+#!bin/bash
+
+user="www-data"
+home="/var/www/html/Servers"
+
