@@ -1,5 +1,5 @@
 #!bin/bash
 
 user="www-data"
-home="/var/www/html/Servers"
+home="/var/www/html/OGSM/Servers"
 
