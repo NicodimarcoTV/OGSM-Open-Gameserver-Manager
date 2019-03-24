@@ -73,9 +73,6 @@ body {
 
 <a class="buttonrot" href="action.php?Aktion=stop&Server=<?php echo htmlspecialchars($server); ?>" methode="get"><?php echo htmlspecialchars($Server); ?> Stoppen</a>
 
-
-<br></br>
-
 <br></br>
 
 <a class="buttonrot" href="action.php?Aktion=deinstall&Server=<?php echo htmlspecialchars($server); ?>" methode="get"><?php echo htmlspecialchars($Server); ?> Deinstallieren </a>
