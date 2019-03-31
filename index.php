@@ -25,7 +25,6 @@ body {
 
 <h1 style="color:#52ce1c;">Herzlich Willkommen bei Open Game Server Manager</h1><p>
 
-<h1  style="color:#1a9cba">Hosted by NicodimarcoTV</h1>
 <br></br>
 <ul>
   <li><a class="active" href="index.php">Home</a></li>
