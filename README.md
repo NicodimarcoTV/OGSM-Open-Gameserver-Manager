@@ -1,6 +1,8 @@
 # OGSM Open-GameServer-Manager
 This is a web Interface to manage your LGSM Servers
 
+Keep in Mind that this Project is still in Development
+
 LinuxGSM: https://github.com/GameServerManagers/LinuxGSM
 
 Installing dependencies
