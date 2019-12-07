@@ -26,7 +26,7 @@ sudo service apache2 restart
 Adding permissions
 
 ```
-sudo chown -R www-data:www-data /var/www/html/
+sudo chown -R www-data:www-data /var/www/html/*
 ```
 Type ``` sudo visudo ``` and insert the following lines after ``` %sudo   ALL=(ALL:ALL) ALL ```
 
