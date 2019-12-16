@@ -1,5 +1,5 @@
 # OGSM Open-GameServer-Manager
-This is a web Interface to manage your LGSM Servers
+This is a web Interface to manage your OGSM Servers
 
 Keep in Mind that this Project is still in Development
 
