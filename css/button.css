@@ -1,6 +1,7 @@
 .buttongruen{
 
         background-color: #4CAF50;
+        width: 84%;
         border: none;
         color: white;
         padding: 15px 32px;
@@ -12,7 +13,7 @@
         cursor: pointer;
         border-radius: 8px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	float: eft;
+	float: left;
 }
 .buttongruen:hover{
 
@@ -34,7 +35,7 @@
         cursor: pointer;
         border-radius: 8px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        float: eft;
+        float: left;
 }
 .buttonblau:hover{
 
@@ -56,7 +57,7 @@
         cursor: pointer;
         border-radius: 8px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        float: eft;
+        float: left;
 }
 .buttongelb:hover{
 
@@ -78,7 +79,7 @@
         cursor: pointer;
         border-radius: 8px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        float: eft;
+        float: left;
 }
 .buttonorange:hover{
 
@@ -89,6 +90,7 @@
 .buttonrot{
 
         background-color: #AB1917;
+        width: 84%;
         border: none;
         color: white;
         padding: 15px 32px;
@@ -100,7 +102,7 @@
         cursor: pointer;
         border-radius: 8px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        float: eft;
+        float: left;
 }
 .buttonrot:hover{
 

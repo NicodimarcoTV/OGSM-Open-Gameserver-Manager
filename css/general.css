@@ -1,0 +1,83 @@
+
+body{
+    font-family: "Courier New", "monospace";
+    background: url("Hintergrund.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+h1 {
+    color: #52ce1c;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px lightgrey ;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+
+.column.side {
+    width: 24%;
+    border-radius: 8px;
+    background-color: white;
+    background-color: rgba(255,255,255,0.5);
+    border: #333333 3px;
+    border-radius: 5px;
+}
+
+
+
+.column.middle {
+    width: 69%;
+    text-align: left;
+    color: black;
+    font-size: 22px;
+    border-radius: 8px;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.column.spacer {
+    width: 1%;
+    background-color: transparent;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 673px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+footer{
+    background-color: #4CAF50;
+    max-height: 250px;
+    border-radius: 0px 0px 8px 8px ;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}

@@ -19,12 +19,17 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: lightgreen;
+    background-color: lightgray;
+    color: black;
+
 }
 
 li a.active {
     background-color: #4CAF50;
-    color: light-red;}
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
 
 li.dropdown {
     display: inline-block;
@@ -51,4 +56,12 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+ul li.right {float: right;}
+
+@media screen and (max-width: 673px){
+    ul li.right,
+    ul li {float: none;}
+    header{text-align: center; font-size: 25px;}
 }
