@@ -20,7 +20,7 @@ sudo mkdir Servers
 sudo unzip Codiad.zip
 sudo rm -r Codiad.zip
 cd Codiad
-mv config.example.php config.php
+sudo mv config.example.php config.php
 sudo service apache2 restart
 ```
 Adding permissions
