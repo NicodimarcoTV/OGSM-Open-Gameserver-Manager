@@ -10,33 +10,41 @@ body{
 
 }
 
-h1 {
+header {
     color: #52ce1c;
     text-align: center;
     font-size: 50px;
-    text-shadow: 2px 2px 5px lightgrey ;
+    text-shadow: 2px 2px 5px black;
+}
+
+h1{
+    color: #52ce1c;
+    text-align: center;
+    font-size: 45px;
 }
 
 h2 {
     color: white;
     text-align: center;
     font-size: 35px;
+    text-shadow: 2px 2px 5px black;
 }
 
 
 .column {
     float: left;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 
 .column.side {
     width: 24%;
-    border-radius: 8px;
     background-color: white;
     background-color: rgba(255,255,255,0.5);
     border: #333333 3px;
     border-radius: 5px;
+    padding: 10px;
+
 }
 
 

@@ -33,25 +33,23 @@ body {
 <body>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<h1>Herzlich Willkommen</h1>
-<p><h1> beim OGSM-Open-Gameserver-Manager</h1></p>
-
+<header>
+    <h1>Herzlich Willkommen</h1>
+    <p><h1> beim OGSM-Open-Gameserver-Manager</h1>
+</header>
 <p>
 
 <br>
 
-<<<<<<< HEAD
 <br>
-=======
->>>>>>> 22a01ea8440984965033d779372354cfd43acea9
+
 <ul>
     <li><a class="active" href="index.php"><i class="fas fa-home"></i> Home</a></li>
     <li><a href="php/install.php"><i class="fas fa-download"></i> Installations Menü</a></li>
-    <li><a href="#"><i class="fas fa-download"></i> 222222</a></li>
-    <li><a href="#"><i class="fas fa-download"></i> 3333333</a></li>
-    <li class="right"><a href="#"><i class="fas fa-download"></i> Hilfe</a></li>
-    <li class="right"><a href="#"><i class="fas fa-download"></i> Kontakt</a></li>
+    <li><a href="php/gui.php"><i class="fas fa-terminal"></i> Konsole</a></li>
+    <li><a href="php/config.php"><i class="fas fa-cogs"></i> Einstellungen</a></li>
+    <li class="right"><a href="#"><i class="far fa-question-circle"></i> Hilfe</a></li>
+    <li class="right"><a href="#"><i class="far fa-address-book"></i> Kontakt</a></li>
 
 <?php include("servers.txt"); ?>
 
@@ -68,7 +66,7 @@ body {
             <i class="fas fa-redo"></i>
                 Server Neustarten
         </a>
-
+        <p>
         <a class="buttonrot" onclick="shutdown()">
             <i class="fas fa-power-off"></i>
                  Server Herunterfahren
