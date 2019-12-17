@@ -72,7 +72,7 @@ body {
                  Server Herunterfahren
         </a>
 
-        <br></br>
+        <br>
     </div>
 
 
@@ -80,13 +80,16 @@ body {
 
     <div class="column middle">
         <h1>Startseite</h1>
+        <br>
+        <h4><p style="text-align: center"><strong>Herzlich Willkommen</strong></p></h4>
+        <p style="text-align: justify">Beim OpenGameServerManager (©OGSM) by NicodimarcoTV & CoolusaHD </p>
     </div>
 
 </div>
 
 <footer>
     <p></p>
-    <p>© OGSM</p>
+    <p>©OGSM by NicodimarcoTV & CoolusaHD</p>
 </footer>
 
 
