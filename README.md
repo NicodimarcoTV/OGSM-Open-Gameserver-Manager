@@ -17,16 +17,16 @@ cd /var/www/html
 sudo git clone https://github.com/NicodimarcoTV/OGSM.git
 cd /var/www/html/OGSM/
 sudo mkdir Servers
-unzip Codiad.zip
+sudo unzip Codiad.zip
 sudo rm -r Codiad.zip
 cd Codiad
-mv config.example.php config.php
+sudo mv config.example.php config.php
 sudo service apache2 restart
 ```
 Adding permissions
 
 ```
-sudo chown -R www-data:www-data /var/www/html/
+sudo chown -R www-data:www-data /var/www/html/*
 ```
 Type ``` sudo visudo ``` and insert the following lines after ``` %sudo   ALL=(ALL:ALL) ALL ```
 
