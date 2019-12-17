@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="148119a2-4a4c-4ad1-a816-9f2723bcc36b" name="Default Changelist" comment="" />
+    <list default="true" id="148119a2-4a4c-4ad1-a816-9f2723bcc36b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ToDo.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +53,7 @@
       <updated>1576601755381</updated>
       <workItem from="1576601759532" duration="533000" />
       <workItem from="1576620355231" duration="4204000" />
+      <workItem from="1576625418446" duration="449000" />
     </task>
     <servers />
   </component>
@@ -62,6 +65,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="70" key="#Notifications/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1576602271586" />
+    <state x="393" y="6" key="CommitChangelistDialog2" timestamp="1576625476063">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="393" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576625476063" />
     <state x="277" y="54" key="SettingsEditor" timestamp="1576621482303">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
