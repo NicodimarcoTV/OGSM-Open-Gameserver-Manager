@@ -17,7 +17,7 @@ cd /var/www/html
 sudo git clone https://github.com/NicodimarcoTV/OGSM.git
 cd /var/www/html/OGSM/
 sudo mkdir Servers
-unzip Codiad.zip
+sudo unzip Codiad.zip
 sudo rm -r Codiad.zip
 cd Codiad
 mv config.example.php config.php
