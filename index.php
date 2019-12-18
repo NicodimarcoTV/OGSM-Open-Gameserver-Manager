@@ -2,33 +2,21 @@
 <html lang="de">
 
 <head>
-
-
 <meta charset="utf-8">
 
 <link type="text/css" href="css/button.css" rel="stylesheet" media="screen" >
 <link type="text/css" href="css/horizontalemenue.css" rel="stylesheet" media="screen" >
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<Style>
-body {
-    background: url("Hintergrund.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
-    padding-top: 40px;
-}
-</Style>
-=======
+
 <link type="text/css" href="css/general.css" rel="stylesheet" media="screen" >
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/select.js"></script>
     <title>OGSM</title>
 
->>>>>>> Stashed changes
-=======
+
 <link type="text/css" href="css/general.css" rel="stylesheet" media="screen" >
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
->>>>>>> 22a01ea8440984965033d779372354cfd43acea9
+
 </head>
 <body>
 
