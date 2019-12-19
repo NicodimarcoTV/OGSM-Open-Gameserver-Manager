@@ -36,13 +36,22 @@ h2 {
 }
 
 
-.column.side {
+.column.left{
     width: 24%;
+    padding: 10px;
+
+}
+
+
+.column.side {
+    width: 100%;
     background-color: white;
     background-color: rgba(255,255,255,0.5);
     border: #333333 3px;
     border-radius: 5px;
+    margin-bottom: 10px;
     padding: 10px;
+
 
 }
 

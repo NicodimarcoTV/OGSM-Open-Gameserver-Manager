@@ -9,7 +9,6 @@
 
 <link type="text/css" href="css/general.css" rel="stylesheet" media="screen" >
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="js/select.js"></script>
     <title>OGSM</title>
 
 

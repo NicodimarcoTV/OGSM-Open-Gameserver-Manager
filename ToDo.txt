@@ -26,7 +26,6 @@ Philipps ToDo's
 []  Startseite response for mobile
 []  Startseitentemplate auf andere Seiten anwenden
 []  Startseitentemplate mit php auslagern ?
-[]  Dropdown list CSS
 []  Logo erstellen
 []
 []
