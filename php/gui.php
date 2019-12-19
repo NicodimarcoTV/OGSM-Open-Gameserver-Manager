@@ -166,9 +166,9 @@ $server = $_GET['server'];
         var txt;
         var r = confirm("Wollen sie den Server wirklich Neustarten ?");
         if (r === true) {
-            window.location.href="php/action.php?Aktion=reboot";
+            window.location.href="./action.php?Aktion=reboot";
         } else {
-            window.location.href="index.php";
+            window.location.href="./gui.php";
         }
     }
 </script>
@@ -178,9 +178,9 @@ $server = $_GET['server'];
         var txt;
         var r = confirm("Wollen sie den Server wirklich Herunterfahren ?");
         if (r === true) {
-            window.location.href="php/action.php?Aktion=shutdown";
+            window.location.href="./action.php?Aktion=shutdown";
         } else {
-            window.location.href="index.php";
+            window.location.href="./gui.php";
         }
     }
 </script>

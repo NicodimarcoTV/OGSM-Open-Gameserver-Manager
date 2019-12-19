@@ -44,7 +44,7 @@
 <br>
 <div class="row">
 
-
+<div class="column left">
     <div class="column side">
         <h2>Host System Optionen</h2>
 
@@ -61,7 +61,7 @@
 
         <br>
     </div>
-
+</div>
 
     <div class="column spacer"></div>
 
