@@ -142,9 +142,9 @@ $server = $_GET['server'];
     <div class="column spacer"></div>
 
     <div class="column middle">
-        <h1>Installations Menü</h1>
+        <h1>Graphical User Interface</h1>
         <br>
-        <h4><p style="text-align: center"><strong>Server Auswahl</strong></p></h4>
+        <h4><p style="text-align: center"><strong>Interface:</strong></p></h4>
 
         <iframe height="100%" width="100%" src="../Codiad/index.php">
         </iframe>
