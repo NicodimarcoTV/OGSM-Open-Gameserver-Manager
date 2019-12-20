@@ -22,7 +22,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <header>
-    <p><h1>Open-GameServer-Manager</h1>
+    <p><h1>
+        <span class="highlight">O</span>pen-<span class="highlight">G</span>ame<span class="highlight">S</span>erver-<span class="highlight">M</span>anager
+    </h1>
 </header>
 <p>
 
@@ -35,8 +37,8 @@
     <li><a class="active" href="install.php"><i class="fas fa-download"></i> Installations Menü</a></li>
     <li><a href="gui.php"><i class="fas fa-terminal"></i> Konsole</a></li>
     <li><a href="config.php"><i class="fas fa-cogs"></i> Einstellungen</a></li>
-    <li class="right"><a href="#"><i class="far fa-question-circle"></i> Hilfe</a></li>
-    <li class="right"><a href="#"><i class="far fa-address-book"></i> Kontakt</a></li>
+    <li class="right"><a href="help.php"><i class="far fa-question-circle"></i> Hilfe</a></li>
+    <li class="right"><a href="contact.php"><i class="far fa-address-book"></i> Kontakt</a></li>
 
     <?php include("../servers.txt"); ?>
 

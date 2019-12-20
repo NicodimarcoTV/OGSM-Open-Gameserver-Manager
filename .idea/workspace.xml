@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="148119a2-4a4c-4ad1-a816-9f2723bcc36b" name="Default Changelist" comment="" />
+    <list default="true" id="148119a2-4a4c-4ad1-a816-9f2723bcc36b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/php/contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/help.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/gui.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/gui.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/install.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/install.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,6 +70,7 @@
       <workItem from="1576701067897" duration="4337000" />
       <workItem from="1576758378592" duration="2222000" />
       <workItem from="1576760749155" duration="686000" />
+      <workItem from="1576871239827" duration="1070000" />
     </task>
     <servers />
   </component>
@@ -84,6 +93,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="393" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576705528788" />
+    <state x="604" y="335" key="NewPhpFileDialog" timestamp="1576872252257">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="604" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1576872252257" />
     <state x="277" y="54" key="SettingsEditor" timestamp="1576621482303">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
