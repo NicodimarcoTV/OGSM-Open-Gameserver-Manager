@@ -1,18 +1,15 @@
 .buttongruen{
 
         background-color: #4CAF50;
-        width: 100%;
+        width: 84%;
         border: none;
         color: white;
-        padding-left: auto;
-        padding-right: auto;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        margin-top: 5px;
+        padding: 15px 32px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+        margin: 4px 2px;
         cursor: pointer;
         border-radius: 8px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -27,18 +24,14 @@
 .buttonblau{
 
         background-color: #00b8e6;
-        width: 100%;
         border: none;
         color: white;
-        padding-left: auto;
-        padding-right: auto;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        margin-top: 5px;
+        padding: 15px 32px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+        margin: 4px 2px;
         cursor: pointer;
         border-radius: 8px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -53,18 +46,14 @@
 .buttongelb{
 
         background-color: #73e600;
-        width: 100%;
         border: none;
         color: white;
-        padding-left: auto;
-        padding-right: auto;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        margin-top: 5px;
+        padding: 15px 32px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+        margin: 4px 2px;
         cursor: pointer;
         border-radius: 8px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -79,18 +68,14 @@
 .buttonorange{
 
         background-color: #ff6600;
-        width: 100%;
         border: none;
         color: white;
-        padding-left: auto;
-        padding-right: auto;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        margin-top: 5px;
+        padding: 15px 32px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+        margin: 4px 2px;
         cursor: pointer;
         border-radius: 8px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -105,18 +90,15 @@
 .buttonrot{
 
         background-color: #AB1917;
-        width: 100%;
+        width: 84%;
         border: none;
         color: white;
-        padding-left: auto;
-        padding-right: auto;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        margin-top: 5px;
+        padding: 15px 32px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+        margin: 4px 2px;
         cursor: pointer;
         border-radius: 8px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);

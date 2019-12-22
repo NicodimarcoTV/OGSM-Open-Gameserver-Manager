@@ -1,21 +1,19 @@
 #!/bin/bash
 #Server Config
 
-. /var/www/html/OGSM/sh/config.txt
+. /var/www/html/OGSM/config/config.txt
 #echo "Benutzer=$user" >&2
 #echo "Home Verzeichnis=$home" >&2
 
 HOME="$home"
 USER="$user"
 commands="$@"
+ACTION="$1"
+SERVER="$2"
+NAME="$3"
+
+
 #Functions
-
-
-#commands="install,ts3server,Teamspeak 3"
-
-ACTION=`echo $commands | awk -F, '{print $1}'`
-SERVER=`echo $commands | awk -F, '{print $2}'`
-NAME=`echo $commands | awk -F, '{print $3}'`
 
 echo $NAME
 
@@ -33,9 +31,7 @@ install_script() {
    sudo -u $USER bash linuxgsm.sh $SERVER
    sudo -u $USER bash $SERVER ai
    cd $HOME/
-   sudo -u $USER sed -i "/<!-- Server Liste -->/a <li><a class=horizontalemenue href=php/gui.php?server=$SERVER methode=get>$NAME</a></li>" "../servers.txt"
-   sudo -u $USER sed -i "/<!-- Server Liste -->/a <li><a class=horizontalemenue href=gui.php?server=$SERVER methode=get>$NAME</a></li>" "../php/servers.txt"
-
+   sudo -u $USER sed -i "/<!-- Server Liste -->/a <li><a class=horizontalemenue href=php/gui.php?server=$SERVER methode=get>$NAME</a></li>" "../config/servers.txt"
  fi
 }
 
@@ -77,8 +73,7 @@ deinstallieren_script() {
      sudo -u $USER bash $SERVER sp
      sudo -u $USER rm -r $HOME/$SERVER/
      cd $HOME
-     sudo -u $USER sed -i "/$SERVER/d" "../servers.txt"
-     sudo -u $USER sed -i "/$SERVER/d" "../php/servers.txt"
+     sudo -u $USER sed -i "/$SERVER/d" "../config/servers.txt"
    else
      echo " Server ist nicht Installiert !!!"
    fi

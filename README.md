@@ -14,10 +14,13 @@ Downloading The repository
 
 ```
 cd /var/www/html
-sudo git clone https://github.com/NicodimarcoTV/OGSM-Open-Gameserver-Manager.git
-sudo mv OGSM-Open-Gameserver-Manager/ OGSM
+sudo git clone https://github.com/NicodimarcoTV/OGSM.git
 cd /var/www/html/OGSM/
 sudo mkdir Servers
+sudo unzip Codiad.zip
+sudo rm -r Codiad.zip
+cd Codiad
+sudo mv config.example.php config.php
 sudo service apache2 restart
 ```
 Adding permissions
