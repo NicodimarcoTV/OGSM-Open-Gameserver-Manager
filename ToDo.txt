@@ -29,3 +29,4 @@ Philipps ToDo's
 []  Logo erstellen
 []  Seite automatisch auf Bildschirm Fenster groesse anpassen.
 []  Hintergrund Bild automatisch anpassen
+[]  Loading Symbol while Server is rebooting.
