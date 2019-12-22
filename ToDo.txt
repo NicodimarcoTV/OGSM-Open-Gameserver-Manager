@@ -14,9 +14,9 @@
 
 Nicos ToDo's
 
-[]  PENIS
-[]
-[]
+[]  Skripte optimieren und neuschreiben
+[]  automatische paketinstallation
+[]  
 []
 []
 []
