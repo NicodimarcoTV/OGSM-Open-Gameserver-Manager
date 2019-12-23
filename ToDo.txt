@@ -14,9 +14,9 @@
 
 Nicos ToDo's
 
-[]  Skripte optimieren und neuschreiben
+[]  Skripte optimieren
 []  automatische paketinstallation
-[]  Neu strukturierung der Dateien
+[]  Hintergrund installation
 []
 []
 []
