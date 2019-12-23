@@ -15,7 +15,7 @@ Downloading The repository
 ```
 cd /var/www/html
 sudo git clone https://github.com/NicodimarcoTV/OGSM-Open-Gameserver-Manager.git
-mv OGSM-Open-Gameserver-Manager/ OGSM
+sudo mv OGSM-Open-Gameserver-Manager/ OGSM
 cd /var/www/html/OGSM/
 sudo mkdir Servers
 sudo service apache2 restart
