@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="148119a2-4a4c-4ad1-a816-9f2723bcc36b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/gui.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/gui.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,15 +69,24 @@
       <workItem from="1576871239827" duration="1349000" />
       <workItem from="1576872644724" duration="773000" />
       <workItem from="1576920630065" duration="624000" />
-      <workItem from="1577131612815" duration="742000" />
+      <workItem from="1577131612815" duration="1708000" />
     </task>
+    <task id="LOCAL-00001" summary="Update">
+      <created>1577132387151</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577132387151</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="70" key="#Notifications" timestamp="1576602271586">
