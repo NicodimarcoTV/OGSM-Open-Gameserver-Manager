@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="148119a2-4a4c-4ad1-a816-9f2723bcc36b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/install.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/install.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,7 @@
       <workItem from="1576871239827" duration="1349000" />
       <workItem from="1576872644724" duration="773000" />
       <workItem from="1576920630065" duration="624000" />
-      <workItem from="1577131612815" duration="2441000" />
+      <workItem from="1577131612815" duration="3029000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1577132387151</created>
@@ -103,10 +102,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="139" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1576702508756" />
-    <state x="393" y="6" key="CommitChangelistDialog2" timestamp="1577133543193">
+    <state x="393" y="6" key="CommitChangelistDialog2" timestamp="1577136074266">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577133543193" />
+    <state x="393" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577136074266" />
     <state x="604" y="335" key="NewPhpFileDialog" timestamp="1576872252257">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
