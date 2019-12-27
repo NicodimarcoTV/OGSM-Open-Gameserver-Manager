@@ -17,7 +17,7 @@ Nicos ToDo's
 []  Skripte optimieren
 []  automatische paketinstallation
 []  Hintergrund installation
-[]
+[]  anzeige des Servers in menü leiste
 []
 []
 
