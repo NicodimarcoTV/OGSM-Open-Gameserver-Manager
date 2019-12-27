@@ -43,11 +43,9 @@ body {
 $config = include('../config/config.php');
 $Home = $config["Home"];
 
-//$Server = $_GET['Server'];
-//$Aktion = $_GET['Aktion'];
+$Server = $_GET['Server'];
+$Aktion = $_GET['Aktion'];
 
-$Server = "mcserver";
-$Aktion = "install";
 $Stelle = "2";
 $Stelle2 = "3";
 
