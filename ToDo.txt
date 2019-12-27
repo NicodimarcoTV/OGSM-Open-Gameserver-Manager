@@ -30,3 +30,4 @@ Philipps ToDo's
 []  Seite automatisch auf Bildschirm Fenster groesse anpassen.
 []  Hintergrund Bild automatisch anpassen
 []  Loading Symbol while Server is rebooting.
+[]  Maus über menü hovern grauer balken
