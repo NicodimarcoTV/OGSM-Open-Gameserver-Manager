@@ -2,20 +2,19 @@
 #Server Config
 
 . /var/www/html/OGSM/config/config.txt
-#echo "Benutzer=$user" >&2
-#echo "Home Verzeichnis=$home" >&2
 
 HOME="$home"
 USER="$user"
 commands="$@"
 ACTION="$1"
 SERVER="$2"
-NAME="$3"
+LOGFILE="$logfile"
 
+### Functions ###
 
-#Functions
-
+NAME=$(sudo -u $USER bash /var/www/html/OGSM/sh/info.sh $SERVER 3 $ACTION)
 echo $NAME
+#NAME=Minecraft
 
 install_script() {
  if [ -e $HOME/$SERVER/$SERVER ]
@@ -30,6 +29,7 @@ install_script() {
    chown $USER:$USER $HOME/$SERVER
    sudo -u $USER bash linuxgsm.sh $SERVER
    sudo -u $USER bash $SERVER ai
+   echo $NAME
    cd $HOME/
    sudo -u $USER sed -i "/<!-- Server Liste -->/a <li><a class=horizontalemenue href=php/gui.php?server=$SERVER methode=get>$NAME</a></li>" "../config/servers.txt"
  fi
@@ -80,29 +80,42 @@ deinstallieren_script() {
 }
 
 reboot_script() {
-   sleep 10 ; sudo reboot &
+   sleep 5 ; sudo reboot &
 }
 
 shutdown_script() {
-   sleep 10 ; sudo shutdown &
+   sleep 5 ; sudo shutdown &
 }
 
+check_log_count() {
 
+sudo -u $USER bash /var/www/html/OGSM/sh/info.sh $SERVER 2 $ACTION "log_count"
+
+}
 
 #Select Action
 
 if [ "$ACTION" = "install" ]
 then
-    install_script
+    mkdir $LOGFILE/$SERVER
+    mkdir $LOGFILE/$SERVER/install
+    install_script >> $LOGFILE/$SERVER/install/INSTALL.$(date "+%d-%m-%Y|%H:%M").log
+    check_log_count
 elif [ "$ACTION" = "start" ]
 then
-    start_script
+    mkdir $LOGFILE/$SERVER/start/
+    start_script >> $LOGFILE/$SERVER/start/START.$(date "+%d-%m-%Y|%H:%M").log
+    check_log_count
 elif [ "$ACTION" = "stop" ]
 then
-    stop_script
+    mkdir $LOGFILE/$SERVER/stop/
+    stop_script >> $LOGFILE/$SERVER/stop/STOP.$(date "+%d-%m-%Y|%H:%M").log
+    check_log_count
 elif [ "$ACTION" = "restart" ]
 then
-    restart_script
+    mkdir $LOGFILE/$SERVER/restart/
+    restart_script >> $LOGFILE/$SERVER/restart/RESTART.$(date "+%d-%m-%Y|%H:%M").log
+    check_log_count
 elif [ "$ACTION" = "status" ]
 then
     update_script

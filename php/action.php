@@ -43,11 +43,11 @@ body {
 $config = include('../config/config.php');
 $Home = $config["Home"];
 
-$Server = $_GET['Server'];
-$Aktion = $_GET['Aktion'];
+//$Server = $_GET['Server'];
+//$Aktion = $_GET['Aktion'];
 
-//$Aktion = "start";
-//$Server = "mcserver";
+$Server = "mcserver";
+$Aktion = "install";
 $Stelle = "2";
 $Stelle2 = "3";
 
@@ -57,9 +57,6 @@ $Stelle2 = "3";
 
 $Name = shell_exec("bash $Home/sh/info.sh $Server $Stelle");
 echo "$Name";
-
-$Name2 = shell_exec("bash $Home/sh/info.sh $Server $Stelle2");
-echo "$Name2";
 
 if ($Aktion == "deinstall") {
   $Variable = "../index.php";
@@ -80,8 +77,8 @@ if ($Aktion == "deinstall") {
 // START FUNCTIONS //
 
 function action() {
-    global $Home, $Aktion, $Name, $Name2;
-    shell_exec("bash $Home/sh/action.sh $Aktion $Name $Name2");
+    global $Home, $Aktion, $Name;
+    shell_exec("bash $Home/sh/action.sh $Aktion $Name");
 }
 
 // END FUNCTIONS //

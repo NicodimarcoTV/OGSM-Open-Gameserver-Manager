@@ -4,9 +4,12 @@
 
 . /var/www/html/OGSM/config/config.txt
 serverlist="$serverlist"
-Server="$1"
-Stelle="$2"
-
+logfile="$logfile"
+USER="$user"
+Server="$1" #Server Name
+Stelle="$2" #1,2,3
+type="$3" # install,start,stop,restart
+function="$4" #log_count
 ### Functions ###
 
 server_info(){
@@ -26,11 +29,27 @@ server_info(){
 	then
 	   echo $gamename
 	else
-	   echo "ERROR"
+	   echo "Keinen Passenden Namen zur Stelle $Stelle gefunden."
 	fi
 }
 
+log_count(){
+
+	if [ $(find $logfile/$gameservername/$type -type f | wc -l) -gt 30 ]
+	then
+	   echo "Lösche $(((e=$(find $logfile/$gameservername/$type -type f | wc -l))-30)) Logfiles"
+	   cd $logfile/$gameservername/$type
+	   sudo -u $USER ls -1t | tail -n +30 | xargs rm -f
+	else
+	   echo "Weniger als 30 Logfiles vorhanden. Aktuell sind $(find $logfile/$gameservername/$type -type f | wc -l) Logfiles vorhanden."
+	fi
+}
 
 ### Function Call ###
 
 server_info
+
+if [ "$function" = "log_count" ]
+then
+  log_count
+fi

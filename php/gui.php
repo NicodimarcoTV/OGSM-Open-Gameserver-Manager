@@ -15,7 +15,6 @@ $Server = $_GET['server'];
 // START SKRIPT //
 
 $Name = shell_exec("bash $Home/sh/info.sh $Server $Stelle");
-echo "$Name";
 
 // END SKRIPT //
 
@@ -46,7 +45,7 @@ echo "$Name";
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<<header>
+<header>
     <p><h1>
         <span class="highlight">O</span>pen-<span class="highlight">G</span>ame<span class="highlight">S</span>erver-<span class="highlight">M</span>anager
     </h1>
@@ -65,8 +64,7 @@ echo "$Name";
     <?php include("../config/servers.txt"); ?>
 
 </ul>
-
--<br>
+<br>
 <div class="row">
 
     <div class="column left">
@@ -84,7 +82,7 @@ echo "$Name";
                     Server Herunterfahren
                 </a>
 
-                -        <br>
+                        <br>
         </div>
 
 
@@ -92,19 +90,19 @@ echo "$Name";
             <h2>Aktueller Gameserver</h2>
 
             <a class="buttongruen" href="action.php?Aktion=start&Server=<?php echo htmlspecialchars($server); ?>" methode="get">
-                <?php echo htmlspecialchars($Server); ?> <i class="fas fa-rocket"></i> Starten</a>
+                <?php echo htmlspecialchars($Name); ?> <i class="fas fa-rocket"></i> Starten</a>
             <a class="buttonorange" href="action.php?Aktion=restart&Server=<?php echo htmlspecialchars($server); ?>" methode="get">
-                <?php echo htmlspecialchars($Server); ?><i class="fas fa-redo"></i> Neustarten</a>
+                <?php echo htmlspecialchars($Name); ?><i class="fas fa-redo"></i> Neustarten</a>
 
             <a class="buttonrot" href="action.php?Aktion=stop&Server=<?php echo htmlspecialchars($server); ?>" methode="get">
-                <?php echo htmlspecialchars($Server); ?> <i class="fas fa-power-off"></i> Stoppen</a>
+                <?php echo htmlspecialchars($Name); ?> <i class="fas fa-power-off"></i> Stoppen</a>
 
             <br>
             <br>
             <br>
             <p></p>
             <a class="buttonrot" href="action.php?Aktion=deinstall&Server=<?php echo htmlspecialchars($server); ?>" methode="get">
-                <?php echo htmlspecialchars($Server); ?><i class="fas fa-trash-alt"></i> Deinstallieren </a>
+                <?php echo htmlspecialchars($Name); ?><i class="fas fa-trash-alt"></i> Deinstallieren </a>
             <br>
             <br>
 
@@ -115,11 +113,11 @@ echo "$Name";
     <div class="column spacer"></div>
 
     <div class="column middle">
-        <h1>Graphical User Interface</h1>
+        <h1>System Konsole</h1>
         <br>
         <h4><p style="text-align: center"><strong>Interface:</strong></p></h4>
 
-        <iframe height="100%" width="100%" src="../Codiad/index.php">
+        <iframe height="100%" width="100%" src="console.php">
         </iframe>
 
 
