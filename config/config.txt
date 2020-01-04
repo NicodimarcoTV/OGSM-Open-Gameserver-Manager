@@ -1,0 +1,6 @@
+#!bin/bash
+
+user="www-data"
+home="/var/www/html/OGSM/Servers"
+serverlist="/var/www/html/OGSM/config/serverlist.csv"
+logfile="/var/www/html/OGSM/Logs"

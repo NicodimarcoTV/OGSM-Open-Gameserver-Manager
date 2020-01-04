@@ -1,0 +1,33 @@
+
+
+========================================================================================================================
+
+  0000000000000000            0000
+  0000000000000000            00   00
+         00                   00    00
+         00       0000        00    00      0000       00
+         00     00    00      00   00     00    00
+         00       0000        0000          0000       00
+
+========================================================================================================================
+
+
+Nicos ToDo's
+
+[]  Skripte optimieren
+[]  automatische paketinstallation
+[]  Hintergrund installation
+[]  anzeige des Servers in menü leiste
+[]
+[]
+
+Philipps ToDo's
+
+[]  Startseite response for mobile
+[]  Startseitentemplate auf andere Seiten anwenden
+[]  Startseitentemplate mit php auslagern ?
+[]  Logo erstellen
+[]  Seite automatisch auf Bildschirm Fenster groesse anpassen.
+[]  Hintergrund Bild automatisch anpassen
+[]  Loading Symbol while Server is rebooting.
+[]  Maus über menü hovern grauer balken

@@ -28,7 +28,6 @@ li a.active {
     background-color: #4CAF50;
     color: white;
     font-weight: bold;
-    font-size: larger;
 }
 
 li.dropdown {

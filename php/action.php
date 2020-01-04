@@ -9,7 +9,7 @@
 <link type="text/css" href="../css/horizontalemenue.css" rel="stylesheet" media="screen" >
 <Style>
 body {
-    background: url("../Hintergrund.jpg");
+    background: url("../config/Hintergrund.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     padding-top: 40px;
@@ -27,55 +27,63 @@ body {
   <li><a class="active" href="../index.php">Home</a></li>
   <li><a class="horizontalemenue" href="install.php">Installations Menü</a></li>
 
-<?php include("servers.txt"); ?>
+<?php include("../config/servers.txt"); ?>
 
 </ul>
 
 </html>
 
+
+/// START ///
+
 <?php
 
-$config = include('config.php');
+// START CONFIG //
 
+$config = include('../config/config.php');
 $Home = $config["Home"];
-echo "$Home";
 
-$User = $config["User"];
-echo "$User";
-
-$Aktion = $_GET['Aktion'];
 $Server = $_GET['Server'];
+$Aktion = $_GET['Aktion'];
 
-   $lines = file('../serverlist.txt');
-   foreach ($lines as $line)
-    {
-    if(strpos($line, $Server) !== false)
-     {
-       $str[] = $line;
-     }
-    }
-    print_r($str);
+$Stelle = "2";
+$Stelle2 = "3";
 
-    $str = implode("|",$str);
+// END CONFIG //
 
-    $arr = preg_split('/\s*\,\s*/', $str);
-     var_dump($arr);
-    $Name = $arr[2];
-     var_dump($Name);
-    ob_end_clean();
+// START SKRIPT //
 
-shell_exec("sh $Home/sh/action.sh $Aktion,$Server,$Name");
+$Name = shell_exec("bash $Home/sh/info.sh $Server $Stelle");
+echo "$Name";
 
 if ($Aktion == "deinstall") {
   $Variable = "../index.php";
+  action();
 } elseif ($Aktion == "reboot") {
   $Variable = "../index.php";
+  action();
 } elseif ($Aktion == "shutdown") {
   $Variable = "../index.php";
+  action();
 } elseif ($Aktion == "install") {
   $Variable = "gui.php?server=$Server";
+  action();
 }
 
+// END SKRIPT //
+
+// START FUNCTIONS //
+
+function action() {
+    global $Home, $Aktion, $Name;
+    shell_exec("bash $Home/sh/action.sh $Aktion $Name");
+}
+
+// END FUNCTIONS //
+
 ?>
+
+/// END ///
+
 
 <meta http-equiv="refresh" content='0; URL="<?php echo htmlspecialchars($Variable);?>"'>
