@@ -68,10 +68,10 @@
 
 
         <div class="custom-select" style="width:300px; text-align: center;">
-            <form>
+            <form action="action.php">
                 <select name="auswahl" onChange="window.location=this.value">
                     <option value="">Bitte Server Auswählen</option>
-                    <option value="/php/action.php?Aktion=install&Server=arma3server">ARMA 3</option>
+                    <option value="?Aktion=install&Server=arma3server">ARMA 3</option>
                     <option value="/php/action.php?Aktion=install&Server=sdtdserver">7 Days to Die</option>
                     <option value="/php/action.php?Aktion=install&Server=arkserver">ARK: Survival Evolved</option>
                     <option value="/php/action.php?Aktion=install&Server=boserver">Ballistic Overkill</option>
