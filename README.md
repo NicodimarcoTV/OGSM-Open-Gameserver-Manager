@@ -8,7 +8,7 @@ LinuxGSM: https://github.com/GameServerManagers/LinuxGSM
 Installing dependencies
 
 ```
-sudo apt-get install git tmux curl python jq apache2 nano zip unzip php7 php7-zip php7-mbstring openssl
+sudo apt-get install git tmux curl python jq apache2 nano zip unzip php7.4 php7.4-zip php7.4-mbstring openssl
 ```
 Downloading The repository
 
